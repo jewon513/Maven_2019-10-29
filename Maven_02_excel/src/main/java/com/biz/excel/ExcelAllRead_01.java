@@ -60,7 +60,5 @@ public class ExcelAllRead_01
 			System.out.println(); // 한 row를 다 읽었으면 줄 바꿈
 		}
     	
-    	
-        System.out.println( "Hello World!" );
     }
 }
