@@ -18,6 +18,7 @@ import lombok.ToString;
 
 public class MasterDetailVO {
 
+	
 	private long m_seq;
 	private String m_subject;
 	private List<DetailDTO> deList;

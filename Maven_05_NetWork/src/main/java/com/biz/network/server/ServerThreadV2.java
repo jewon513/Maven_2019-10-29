@@ -21,11 +21,12 @@ public class ServerThreadV2 implements Runnable{
 		
 		// 클라이언트 응답 대기 
 		try {
+			int id = 0;
 			while(true) {
-				int id = (int)(Math.random()*100);
+//				id = (int)(Math.random()*100);
 				client = this.server.accept();	
 				
-				ServerSubThreadV1 ss = new ServerSubThreadV1(client, id);
+				ServerSubThreadV1 ss = new ServerSubThreadV1(client, ++id);
 				Thread tRun = new Thread(ss);
 				tRun.start();
 			}

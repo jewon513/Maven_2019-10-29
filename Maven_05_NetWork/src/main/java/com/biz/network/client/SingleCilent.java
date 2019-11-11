@@ -17,7 +17,7 @@ public class SingleCilent {
 
 	public static void main(String[] args) throws IOException {
 		
-		String serverIP = "192.168.123.40";			// client에서 접속하고자 하는 서버의 IP
+		String serverIP = "192.168.123.45";			// client에서 접속하고자 하는 서버의 IP
 		int serverPort = 8085;			// client에서 접속하고자 하는 서버의 Port
 		Socket mySocket = new Socket(serverIP, serverPort);
 		Scanner scan = new Scanner(System.in);
